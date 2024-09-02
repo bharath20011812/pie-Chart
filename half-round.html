@@ -33,7 +33,6 @@
         .main {
             width: 100%;
             float: left;
-            background-color: #000;
             padding: 50px 0;
             height: 400px;
             overflow: hidden;
@@ -47,7 +46,7 @@
         .box-main::before {
             content: '';
             width: 100%;
-            height: 230px;
+            height: 260px;
             background: #000;
             position: absolute;
             z-index: 9999;
@@ -66,24 +65,23 @@
         }
 
         .box-1 p img {
-            width: 100%;
-            transform: translate(0px, -52px);
+            width: 120%;
+            transform: translate(10px, -75px);
         }
 
         .box-1 {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgb(0, 0, 0);
+            transform: translate(-62%, -41%);
             padding: 10px 20px;
-            z-index: 10;
             width: 250px;
             height: 250px;
             border-radius: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
+            z-index: 99999;
         }
 
         .box-1 p {
@@ -102,11 +100,11 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgb(0, 0, 0);
+            background-color: #000;
             width: 300px;
             height: 300px;
             overflow: hidden;
-            border-radius: 100%;
+            border-radius: 100% 100%;
             z-index: 9;
         }
 
@@ -117,8 +115,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 600px;
-            height: 600px;
+            width: 460px;
+            height: 460px;
             background-color: #000;
             z-index: 8;
             border-radius: 100%;
@@ -142,15 +140,15 @@
 
 
         .box-3-1 {
-            width: 300px;
-            height: 237px;
-            left: -13%;
-            top: 20%;
-            transform: rotate(136deg);
+            width: 246px;
+            height: 165px;
+            left: -17%;
+            top: 17%;
+            transform: rotate(138deg);
             display: flex;
             align-items: center;
             justify-content: center;
-            border-left: 20px solid #000;
+            border-left: 10px solid #000;
             overflow: hidden;
         }
 
@@ -158,23 +156,19 @@
             position: relative;
             width: 100%;
             height: 100%;
-            transform: rotate(1deg) translate(-42%, -44%);
+            transform: rotate(-9deg) translate(-62%, -52%);
             text-anchor: middle;
             offset: 50%;
         }
 
-        .box-3-1 .box-title button p {
-            transform: translate(-18px, 145%) rotate(3deg);
-        }
-
         .box-3-1 .box-title {
             position: relative;
-            left: -18%;
-            top: -1%;
+            left: -14%;
+            top: 3%;
             text-align: center;
-            transform: rotate(-211deg);
-            width: 96%;
-            height: 80%;
+            transform: rotate(-194deg);
+            width: 93%;
+            height: 75%;
         }
 
         .box-3-1 .box-title button {
@@ -186,12 +180,12 @@
         }
 
         .box-3-2 {
-            width: 433px;
-            height: 200px;
-            right: -13%;
+            width: 373px;
+            height: 163px;
+            right: -10%;
             z-index: -1;
-            transform: rotate(-1deg);
-            top: -42%;
+            transform: rotate(0deg);
+            top: -40%;
             overflow: hidden;
         }
 
@@ -199,9 +193,9 @@
             width: 85%;
             height: 93%;
             position: relative;
-            left: 32px;
+            left: 43px;
             transform: rotate(0deg);
-            top: 7px;
+            top: -18px;
         }
 
         .box-3-1 .box-title button svg {
@@ -219,14 +213,20 @@
 
         }
 
+        .box-3-2 .box-title text {
+            transform: translate(-24%, -30%) rotate(0deg);
+            text-anchor: middle;
+            offset: 50%;
+        }
+
         .box-3-3 {
-            width: 300px;
-            height: 270px;
-            right: -63%;
-            top: -58%;
+            width: 249px;
+            height: 177px;
+            right: -66%;
+            top: -55%;
             z-index: 99;
-            transform: rotate(39deg) translate(-2%, 3%);
-            border-left: 20px solid #000;
+            transform: rotate(35deg) translate(-2%, 3%);
+            border-left: 10px solid #000;
         }
 
         .box-3-3 .box-title {
@@ -244,8 +244,22 @@
             padding: 0;
         }
 
+        .box-3-3 .box-title svg text {
+            position: relative;
+            transform: translate(-21%, -72%) rotate(28deg);
+            width: 205px;
+            height: 124px;
+            text-anchor: middle;
+            offset: 50%;
+        }
+
+        .box-3-3 .box-title svg {
+            width: 100%;
+            height: 100%;
+        }
+
         .box-title button {
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 700;
             color: #000;
         }
@@ -254,20 +268,6 @@
             color: #000;
         }
 
-        .box-3-3 .box-title svg text {
-            position: relative;
-            transform: translate(-8%, -26%) rotate(28deg);
-            width: 205px;
-            height: 124px;
-            text-anchor: middle;
-            fill: black;
-            offset: 50%;
-        }
-
-        .box-3-3 .box-title svg {
-            width: 100%;
-            height: 100%;
-        }
 
         .left-offeringsec img {
             width: 100%;
@@ -339,12 +339,8 @@
                                         <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
                                             data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
                                             aria-selected="true">
-                                            <p>Asset</p>
                                             <svg>
                                                 <defs>
-                                                    <path id="line5-21" d="
-                                  M 0,300 
-                                  A 200,200 0 0 1 400,300"></path>
                                                     <path id="line5-22" d="
                                   M 0,300 
                                   A 200.75,200 0 0 1 400,300"></path>
@@ -353,8 +349,12 @@
                                   A 203,200 0 0 1 400,300"></path>
                                                 </defs>
                                                 <text>
+
+                                                    <textPath startOffset="50%" xlink:href="#line5-22">
+                                                        Asset
+                                                    </textPath>
                                                     <textPath startOffset="50%" xlink:href="#line5-23">
-                                                        Operations
+                                                        <tspan dy="5">Operations</tspan>
                                                     </textPath>
                                                 </text>
                                             </svg>
@@ -367,7 +367,26 @@
                                         <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
                                             data-bs-target="#nav-profile" type="button" role="tab"
                                             aria-controls="nav-profile" aria-selected="false">
-                                            Asset<br>Repairs &amp;<br>Maintenance
+                                            <svg xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <path id="line5-21" d="M 0,300 A 200,200 0 0 1 400,300"></path>
+                                                    <path id="line5-22" d="M 0,300 A 200.75,200 0 0 1 400,300"></path>
+                                                    <path id="line5-23" d="M 0,300 A 203,200 0 0 1 400,300"></path>
+                                                </defs>
+                                                <text>
+                                                    <textPath startOffset="50%" xlink:href="#line5-21">
+                                                        <tspan dy="0">Asset</tspan>
+                                                    </textPath>
+                                                    <textPath startOffset="50%" xlink:href="#line5-22">
+                                                        <tspan dy="3    ">Repairs &</tspan>
+                                                    </textPath>
+                                                    <textPath startOffset="50%" xlink:href="#line5-23">
+                                                        <tspan dy="10">Maintenance</tspan>
+                                                    </textPath>
+                                                </text>
+                                            </svg>
+
+
                                         </button>
                                     </div>
                                 </div>
@@ -393,7 +412,7 @@
                                                         Asset
                                                     </textPath>
                                                     <textPath startOffset="50%" xlink:href="#line5-22">
-                                                        Improvement
+                                                        <tspan dy="5">Improvement</tspan>
                                                     </textPath>
                                                 </text>
                                             </svg>
