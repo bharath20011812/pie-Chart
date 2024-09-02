@@ -66,7 +66,7 @@
         }
 
         .box-1 p img {
-            width: 78%;
+            width: 100%;
             transform: translate(0px, -52px);
         }
 
@@ -272,6 +272,34 @@
         .left-offeringsec img {
             width: 100%;
         }
+
+
+
+        @media screen and (max-width: 990px) {
+            .main {
+                height: auto;
+            }
+
+            .main .row.py-3 {
+                flex-direction: column-reverse;
+            }
+
+            .left-offeringsec {
+                position: relative;
+                z-index: 999999;
+                margin-top: -180px !important;
+            }
+
+            .box-main::before {
+                content: '';
+                width: 100%;
+                height: 310px;
+                background: #000;
+                position: absolute;
+                z-index: 9999;
+                bottom: -75px;
+            }
+        }
     </style>
 </head>
 
@@ -280,7 +308,7 @@
         <div class="container">
             <div class="main">
                 <div class="row py-3">
-                    <div class="col-lg-6 left-offeringsec">
+                    <div class="col-lg-4 left-offeringsec">
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                                 aria-labelledby="nav-home-tab">
@@ -296,7 +324,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-8">
                         <div class="box-main">
                             <div class="box-1">
                                 <p title="Ofeering">
